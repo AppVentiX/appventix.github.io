@@ -1,0 +1,9 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Hide the "View on GitHub" link in header */
+header ul {
+  display: none !important;
+}
