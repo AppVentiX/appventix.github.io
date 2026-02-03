@@ -40,7 +40,7 @@ When the AppVentiX Powershell module is installed on the same machine as the App
 You can also configure the share manually if the detection does not succeed or is being run from a different machine. To configure your AppVentiX environment:
 
 ```powershell
-# Set the configuration share path
+# Set the configuration share path (Not needed if detected automatically)
 Set-AppVentiXConfigShare -Path "\\fileserver.domain.com\config$"
 
 # If credentials are required to connect to the Configuration Share, you can provide these
