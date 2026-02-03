@@ -53,25 +53,6 @@ Set-AppVentiXConfigShare -Path "\\fileserver.domain.com\config$" -Credential $Cr
 Test-AppVentiXIsLicensed
 ```
 
-## Available Commands
-
-### Migration Commands
-
-These commands help you migrate from App-V Management Server to AppVentiX:
-
-| Command | Description |
-|---------|-------------|
-| [Import-AppVManagementPackage](commands/Import-AppVManagementPackage.html) | Imports App-V packages from the Management Database |
-| [Import-AppVManagementConnectionGroup](commands/Import-AppVManagementConnectionGroup.html) | Imports Connection Groups from the Management Database |
-
-## HowTo Guides
-
-Step-by-step guides for common tasks:
-
-| Guide | Description |
-|-------|-------------|
-| [Import packages from App-V Management Database](howto/Import-packages-from-AppV-Management-Database.html) | Complete guide for migrating App-V packages |
-
 ## Support
 
 For questions, issues, or feature requests, please contact [AppVentiX Support](https://support.appventix.com/)
