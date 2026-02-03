@@ -15,6 +15,7 @@ highlighter: rouge
 header_pages:
   - index.md
   - commands/index.md
+  - howto/index.md
 
 # Collections for commands
 collections:
@@ -31,6 +32,11 @@ defaults:
       layout: "default"
   - scope:
       path: "commands"
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: "howto"
       type: "pages"
     values:
       layout: "default"
