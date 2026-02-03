@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Import-AppVManagementPackage
-parent: Commands
-nav_order: 1
+nav_exclude: true
 ---
 
 # Import-AppVManagementPackage

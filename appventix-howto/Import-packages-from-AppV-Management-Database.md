@@ -1,8 +1,7 @@
 ---
 layout: default
 title: "HowTo: Import packages from App-V Management Database"
-parent: HowTo Guides
-nav_order: 1
+nav_exclude: true
 ---
 
 # HowTo: Import packages from App-V Management Database
@@ -191,5 +190,5 @@ After importing packages, you may want to:
 
 ## Related Commands
 
-- [Import-AppVManagementPackage](../commands/Import-AppVManagementPackage.html) - Command reference
-- [Import-AppVManagementConnectionGroup](../commands/Import-AppVManagementConnectionGroup.html) - Import connection groups
+- [Import-AppVManagementPackage](../appventix-commands/Import-AppVManagementPackage.html) - Command reference
+- [Import-AppVManagementConnectionGroup](../appventix-commands/Import-AppVManagementConnectionGroup.html) - Import connection groups

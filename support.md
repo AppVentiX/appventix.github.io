@@ -3,6 +3,7 @@ layout: default
 title: Support
 description: Get help with AppVentiX PowerShell Module
 permalink: /support/
+nav_order: 4
 ---
 
 # Support

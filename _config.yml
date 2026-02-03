@@ -1,9 +1,11 @@
-title: AppVentiX PowerShell Module
+title: AppVentiX PowerShell
 description: Documentation for the AppVentiX PowerShell Module - App-V Management and Seamless Publishing
 baseurl: ""
 url: "https://appventix.github.io"
+favicon_ico: "/assets/images/favicon.ico"
+logo: "/assets/images/logo.png"
 
-remote_theme: pages-themes/modernist@v0.2.0
+remote_theme: just-the-docs/just-the-docs@v0.10.0
 plugins:
   - jekyll-remote-theme
 
@@ -11,11 +13,16 @@ plugins:
 markdown: kramdown
 highlighter: rouge
 
-# Navigation
-header_pages:
-  - index.md
-  - commands/index.md
-  - howto/index.md
+# Just the Docs settings
+color_scheme: dark
+search_enabled: true
+nav_enabled: true
+
+# Aux links (top right)
+aux_links:
+  "Support": "https://support.appventix.com/"
+
+aux_links_new_tab: true
 
 # Collections for commands
 collections:
@@ -31,15 +38,17 @@ defaults:
     values:
       layout: "default"
   - scope:
-      path: "commands"
+      path: "docs-commands"
       type: "pages"
     values:
       layout: "default"
+      nav_exclude: true
   - scope:
-      path: "howto"
+      path: "docs-howto"
       type: "pages"
     values:
       layout: "default"
+      nav_exclude: true
 
 # Exclude files
 exclude:
