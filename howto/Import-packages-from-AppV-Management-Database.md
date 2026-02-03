@@ -146,7 +146,8 @@ Get-AppVentiXPublishingTask -Id ebaaaed1-03c6-4319-b352-dfd264476f20
 ```
 ![Get all publishing tasks by Id](../assets/images/howto/get-publishingtask-by-id.png)
 
-You can also verify the imported packages in the AppVentiX Console:
+You can also verify the imported packages (publishing tasks) in the AppVentiX Console.
+On the tab "Packages" click "All Publishing Tasks" to see all, including the newly added publishing tasks.
 
 ![Imported packages in AppVentiX Console](../assets/images/howto/import-packages-result.png)
 
