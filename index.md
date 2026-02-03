@@ -56,7 +56,8 @@ Test-AppVentiXIsLicensed
 
 ## Support
 
-For questions, issues, or feature requests, please contact [AppVentiX Support](https://support.appventix.com/)
+For questions, issues, or feature requests, please contact [AppVentiX Support](../support/).
+
 ---
 
 *Copyright (c) AppVentiX*
