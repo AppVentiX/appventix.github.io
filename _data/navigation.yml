@@ -1,0 +1,14 @@
+# Navigation menu items
+# Add, remove, or reorder items as needed
+
+- title: Home
+  url: /
+
+- title: PowerShell Reference
+  url: /commands/
+
+- title: HowTo Guides
+  url: /howto/
+
+- title: Support
+  url: /support/
