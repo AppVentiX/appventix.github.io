@@ -90,7 +90,6 @@ Import-AppVManagementPackage -SQLServer "sql01.domain.local"
 
 ![Import All Packages and publish to All Machine Groups](../assets/images/howto/import-all-packages-all-machine-groups.png)
 
-
 ### Option B: Import Selected Packages (GUI)
 
 For more control over which packages to import, use the GUI mode. The published task IDs will be returned in the output:
