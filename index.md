@@ -50,7 +50,14 @@ $Credential = Get-Credential -Message "Enter AppVentiX Config Share credentials"
 $ConfigShare = "\\fileserver.domain.local\config$"
 Set-AppVentiXConfigShare -ConfigShare $ConfigShare -Credential $Credential
 
-# To verify your license
+# If Separate Credentials are required for communication with Active Directory, you must specify this beforehand.
+# By default it connects on port 389, you can change the port by specifying the -Port parameter valid values are 389 or 636
+
+$ADCredential = Get-Credential -Message "Enter Active Directory credentials"
+$ADDomainController = "dc01.domain.local"
+Set-AppVentiXADCredential -Credential $ADCredential -Server $ADDomainController [-Port 636]
+
+# To verify you have a valid license and are connected to the config share
 Test-AppVentiXIsLicensed
 ```
 
