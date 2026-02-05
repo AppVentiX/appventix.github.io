@@ -28,12 +28,6 @@ Install-Module AppVentiX [-Scope CurrentUser] [-Force] [-AllowClobber]
 # Import the module
 Import-Module AppVentiX
 
-# (Optional) Verify connection to config share
-Get-AppVentiXConfigShare
-
-# (Optional) Verify your license is valid
-Test-AppVentiXIsLicensed
-
 # If custom credentials are required, you can run the following command to connect
 # E.g. if the current user does not have permissions to access the config share
 
@@ -41,12 +35,9 @@ $Credential = Get-Credential -Message "Enter AppVentiX Config Share credentials"
 $ConfigShare = "\\fileserver.domain.local\config$"
 Set-AppVentiXConfigShare -ConfigShare $ConfigShare -Credential $Credential
 
-# If Separate Credentials are required for communication with Active Directory, you must specify this beforehand.
-# By default it connects on port 389, you can change the port by specifying the -Port parameter valid values are 389 or 636
+# (Optional) Verify your license is valid
+Test-AppVentiXIsLicensed
 
-$ADCredential = Get-Credential -Message "Enter Active Directory credentials"
-$ADDomainController = "dc01.domain.local"
-Set-AppVentiXADCredential -Credential $ADCredential -Server $ADDomainController [-Port 636]
 ```
 
 ## Step 2: Identify Your SQL Server Details
@@ -89,6 +80,7 @@ Import-AppVManagementPackage -SQLServer "sql01.domain.local"
 ```
 
 ![Import All Packages and publish to All Machine Groups](../assets/images/howto/import-all-packages-all-machine-groups.png)
+
 
 ### Option B: Import Selected Packages (GUI)
 
